@@ -13,6 +13,8 @@ public class Main extends Application {
 
     private Stage primaryStage;
     private AnchorPane rootLayout;
+    private static String username = "Username";
+    private static String password = "Password";
 
     @Override
     public void start(Stage primaryStage) {
@@ -52,4 +54,8 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+	public static boolean login(String attemptedUsername, String attemptedPassword) {
+		return (attemptedUsername.equals(username) && attemptedPassword.equals(password));		
+	}
 }
