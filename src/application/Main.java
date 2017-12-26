@@ -76,4 +76,8 @@ public class Main extends Application {
 	public static boolean login(String attemptedUsername, String attemptedPassword) {
 		return (attemptedUsername.equals(username) && attemptedPassword.equals(password));
 	}
+
+	public static String getUsername() {
+		return username;
+	}
 }
